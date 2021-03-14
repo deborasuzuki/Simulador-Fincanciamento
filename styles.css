@@ -1,0 +1,71 @@
+html{ /*raiz*/
+    font-family: Arial; /*config herdável, vai para todo a pág*/
+    background-color: rgb(190, 218, 226); /*não é herdável*/
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row; /*dimensão será do conteúdo da linha*/
+    justify-content: center;
+}
+
+.app { /*filho - herda as config do body*/
+    background-color: #fff;
+    padding: 8px;
+}
+
+button {
+    font-size: 1.3rem; /*1,3x o tamanho da fonte raiz de pág*/
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+table,
+button,
+label {
+    margin: 4px;
+}
+
+h1,
+h2 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+h1,
+h2,
+th {
+    color: rgb(26, 159, 177);
+    font-weight: bolder;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    width: 10rem;
+    display: block;
+    font-size: 1rem;
+}
+
+th,
+td {
+    padding-left: 8px;
+    text-align: right;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+    text-align: left;
+}
