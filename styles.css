@@ -4,7 +4,7 @@ html{ /*raiz*/
 }
 
 body {
-    margin: 0;
+    margin-top: 20px;
     display: flex;
     flex-direction: row; /*dimensão será do conteúdo da linha*/
     justify-content: center;
@@ -16,7 +16,9 @@ body {
 }
 
 button {
-    font-size: 1.3rem; /*1,3x o tamanho da fonte raiz de pág*/
+    font-size: 1.1rem; /*1,3x o tamanho da fonte raiz de pág*/
+    border-radius: 5px;
+    background:rgb(219, 219, 219);
 }
 
 h1 {
@@ -35,10 +37,14 @@ label {
     margin: 4px;
 }
 
-h1,
+h1 {
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
 h2 {
     margin-top: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 h1,
@@ -46,26 +52,53 @@ h2,
 th {
     color: rgb(26, 159, 177);
     font-weight: bolder;
+    text-align: center;
 }
 
 label {
     display: inline-block;
+    /*font-weight: bolder;*/
+    color: gray;
 }
 
 input {
     width: 10rem;
     display: block;
     font-size: 1rem;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
-th,
+table {
+    padding-left: 30px;
+}
+
+th {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    justify-content: center;
+    /*width: 140px;*/
+    border-bottom: solid rgb(199, 219, 221);
+}
+
 td {
-    padding-left: 8px;
-    text-align: right;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    justify-content: center;
+    /*width: 140px;*/
 }
 
-th:first-child,
+/*th:first-child,
 td:first-child {
     padding-left: 0;
-    text-align: left;
+    text-align: center;
+}*/
+
+tr:nth-child(even) {
+    background: rgb(199, 219, 221);
 }
