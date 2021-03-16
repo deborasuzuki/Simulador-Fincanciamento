@@ -14,5 +14,5 @@ HTML, CSS e JavaScript.
 
 
 
-![Simulação Financiamento](C:\Users\debor\OneDrive\Documentos\Front IGTI\Projetos\Simulador Financiamento\Simulação Financiamento.png)
+![Simulação Financiamento](https://github.com/deborasuzuki/Simulador-Fincanciamento/blob/main/Simula%C3%A7%C3%A3o%20Financiamento.png)
 
