@@ -9,8 +9,8 @@ function calcular () {
     var jurosAA = juros.valueAsNumber;
     var jurosAM = (1 + jurosAA) ** (1 / 12) - 1;
     var amortizacao = total / meses;
-    document.getElementById("meses").valueAsNumber = meses;
-    document.getElementById("jurosam").valueAsNumber = jurosAM; 
+    //document.getElementById("meses").valueAsNumber = meses;
+    //document.getElementById("jurosam").valueAsNumber = jurosAM; 
 
     for (var i = 0; i < 5; i++) { 
         var saldoDevedor = total - i * amortizacao;
@@ -29,8 +29,19 @@ function calcular () {
         totalj += jurosP; //igual a totalj + jurosP
     }
     document.getElementById("total").value = totalj.toFixed(2);
+
+    document.querySelector(".ocultar").style.display = "block";
+
+    document.getElementById("meses").textContent = `Prazo (meses):  ${meses}`;
+    document.getElementById("jurosam").textContent = `Juros ao mês:  ${jurosAM}`;
+    document.getElementById("total").textContent = `Juros acumulados:  ${totalj.toFixed(2)}`;
+
  }
 
- calcular();
+ function onEnter(teclado) {
+    if (teclado.keyCode == 13) {
+        calcular();
+    }
+ }
 
 
